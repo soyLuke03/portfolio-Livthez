@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="header-container-info">
+        <p *ngIf="titulo">{{ titulo }}</p>
+        <img *ngIf="imagen" [src]="imagen" alt="{{ imagen }}" />
+    </div>
+    <div class="footer-container-info" *ngIf="chips && chips.length > 0">
+        <div class="chip-container">
+            <div class="chip" *ngFor="let chip of chips"> {{ chip }} </div>
+        </div>
+        <div class="index" *ngIf="index !== null">
+            <p> {{ index }} </p>
+        </div>
+    </div>
+</div>

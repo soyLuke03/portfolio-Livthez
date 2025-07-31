@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="card-container">
+    <app-description-card
+      *ngFor="let card of cards; index as i"
+      [chips]="card.chips"
+      [index]="i"
+      [titulo]="card.title"
+      [imagen]="card.imagenUrl"
+    ></app-description-card>
+  </div>
+</div>
